@@ -12,5 +12,25 @@ Accédons à "IAM & Admin > Comptes de service" dans le menu de navigation et cl
 
 ![terra8](https://user-images.githubusercontent.com/93289664/218159424-8df1fb0e-f72f-4278-b7ca-17e319a96e90.PNG)
 
-Copions l'ID du projet depuis notre console GCP () et remplaçons-le dans le fichier main.tf du github repository, puis configurons notre environnement de variable en faisant cette declaration: credentials= "${file("service_account.json")}" et après avoir renommer la clé sous format json par "service_account.json"
+Copions l'ID du projet depuis notre console GCP (second-drake-376011) et remplaçons-le dans le fichier main.tf du github repository, puis configurons notre environnement de variable en faisant cette declaration: credentials= "${file("service_account.json")}" et après avoir renommer la clé sous format json par "service_account.json"
 ![Capture d’écran du 2023-02-10 18-49-26](https://user-images.githubusercontent.com/93289664/218162000-dc284db8-ab13-404f-8b69-f1395953895b.png)
+
+Après avoir installer terraform CLI, nous mettons les fichiers "main.tf" et "service_account.json" dans le meme dossier que terraform. puis nous lançons la commande $terraform init
+![Capture d’écran du 2023-02-10 05-08-35](https://user-images.githubusercontent.com/93289664/218164359-a63484d5-5f2b-4f23-af03-acafe9329986.png)
+
+Ensuite nous tapons la commande "$terraform apply".Une erreur nous renseigne de suivre un lien pour activer le "compute engine API" l'API qui permet de créer et exécuter des machines virtuelles sur Google Cloud Platform. Malheureusement pour nous pour activer l'api il faut un compte payant que j'ai tenté des jours et des pour activer l'essai de 3 mois de GCP en mettant les bonnes coordonées de ma cate bancaire valide, le processus echoue à chaque fois au niveau de verification du compte bancaire, ceci en utilisant différentes cartes valides. En plus Google facture la verification du compte.
+
+![Capture d’écran du 2023-02-10 05-23-40](https://user-images.githubusercontent.com/93289664/218167798-4ceb578a-029f-424a-8f74-a55cbf30cb8f.png)
+
+![Capture d’écran du 2023-02-10 05-18-30](https://user-images.githubusercontent.com/93289664/218168151-f3615d40-7caa-43d5-9336-d6b57752c4c1.png)
+
+Normalement après activation de l'API et réessayant la commande "$terraform apply" l'instance de notre machine virtuelle devrait être créée avec succès et pour verifier il suffit d'aller sur gcp et dans le menu "VM instances" et regarder les caracteristique de notre VM(myvm-dev pour notre cas)
+
+
+
+
+
+
+désolé pour le retard causé par la periode de présentation des projets. je tiens vraiment à coeur ce stage et sur tout le thème du stage Monsieur.
+ce test a été fait avec des resssources que j'ai à ma disposition.
+
