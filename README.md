@@ -11,3 +11,5 @@ Accédons à "IAM & Admin > Comptes de service" dans le menu de navigation et cl
 ![terra7](https://user-images.githubusercontent.com/93289664/218159219-1145ec6e-b92c-45ca-8e0a-cb51e2753921.PNG)
 
 ![terra8](https://user-images.githubusercontent.com/93289664/218159424-8df1fb0e-f72f-4278-b7ca-17e319a96e90.PNG)
+
+Copions l'ID du projet depuis notre console GCP et remplaçons-le dans le fichier main.tf du github repository, puis configurons notre environnement de variable 
