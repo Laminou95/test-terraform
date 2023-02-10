@@ -12,4 +12,5 @@ Accédons à "IAM & Admin > Comptes de service" dans le menu de navigation et cl
 
 ![terra8](https://user-images.githubusercontent.com/93289664/218159424-8df1fb0e-f72f-4278-b7ca-17e319a96e90.PNG)
 
-Copions l'ID du projet depuis notre console GCP et remplaçons-le dans le fichier main.tf du github repository, puis configurons notre environnement de variable 
+Copions l'ID du projet depuis notre console GCP () et remplaçons-le dans le fichier main.tf du github repository, puis configurons notre environnement de variable en faisant cette declaration: credentials= "${file("service_account.json")}" et après avoir renommer la clé sous format json par "service_account.json"
+![Capture d’écran du 2023-02-10 18-49-26](https://user-images.githubusercontent.com/93289664/218162000-dc284db8-ab13-404f-8b69-f1395953895b.png)
