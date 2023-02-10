@@ -16,6 +16,7 @@ Copions l'ID du projet depuis notre console GCP (second-drake-376011) et rempla�
 ![Capture d’écran du 2023-02-10 18-49-26](https://user-images.githubusercontent.com/93289664/218162000-dc284db8-ab13-404f-8b69-f1395953895b.png)
 
 Après avoir installer terraform CLI, nous mettons les fichiers "main.tf" et "service_account.json" dans le meme dossier que terraform. puis nous lançons la commande $terraform init
+
 ![Capture d’écran du 2023-02-10 05-08-35](https://user-images.githubusercontent.com/93289664/218164359-a63484d5-5f2b-4f23-af03-acafe9329986.png)
 
 Ensuite nous tapons la commande "$terraform apply".Une erreur nous renseigne de suivre un lien pour activer le "compute engine API" l'API qui permet de créer et exécuter des machines virtuelles sur Google Cloud Platform. Malheureusement pour nous pour activer l'api il faut un compte payant que j'ai tenté des jours et des pour activer l'essai de 3 mois de GCP en mettant les bonnes coordonées de ma cate bancaire valide, le processus echoue à chaque fois au niveau de verification du compte bancaire, ceci en utilisant différentes cartes valides. En plus Google facture la verification du compte.
